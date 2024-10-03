@@ -5,6 +5,26 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>HEALTHY FOOD</title>
      <style>
+          .continer{
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+               gap: 20px;
+
+          }
+          .food{
+               border: 1px solid springgreen;
+               border-radius: 10px;
+               padding: 10px;
+          }
+          .food >img{
+               width: 100%;
+          }
+                       
+          @media screen and (max-width:768px) {
+               .continer{
+                    grid-template-columns: repeat(1, 1fr);
+               }
+          }
 
      </style>
 </head>
